@@ -1,0 +1,797 @@
+http://www.51xuediannao.com/html+css/htmlcssjq/flex1.html
+
+http://oa.ilink.pw:8888/general/index9.php 公司内部
+
+
+
+账号 linkculture@163.com
+密码  Passw0rd@link
+
+小程序
+linktecgroup@163.com
+ Phtv@123
+
+ 
+//新版后台地址
+artappnew.art.ifeng.com
+shequ.art.ifeng.com
+
+http://artappnew.art.ifeng.com/web/passport
+
+songck@phoenixtv.com.cn
+123456
+
+页面
+var/www/shequ/apps/...tpl
+apps/admin/tpl/default/index  登陆页面
+apps/public/tpl/...  朋友圈
+apps/weiba/tpl/...  微吧
+apps/people/tpl/...  找伙伴
+apps/channel/tpl/...  频道
+apps/w3g/thl
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AppID(应用ID)wxd1c10932f25f6564
+
+wxfac16e50985ef05d
+
+http://m.art.ifeng.com/eventlive/30
+http://live.art.ifeng.com/2016/1103/2694643.shtml
+
+
+
+172.25.77.51 artapp.art.ifeng.com
+172.25.77.51 art.ifeng.com
+172.25.77.38 shop.ifeng.com
+172.25.77.51 live.art.ifeng.com
+172.25.77.51 img.art.ifeng.com
+172.25.77.51 upload.art.ifeng.com
+172.25.77.51 wap.art.ifeng.com
+172.25.77.51 m.art.ifeng.com
+172.25.77.51 artadmin2015.art.ifeng.com
+
+
+
+
+命令	对应组件或命令
+wapp	注册小程序
+wblockif	block wx:if
+wbutton	button
+wcheckbox	checkbox
+wcheckboxgroup	checkbox-group
+wactionsheet	action-sheet
+wcanvas	canvas
+wimage	image
+wtext	text
+wview	view
+wviewbind	view 事件
+wmap	map
+wmodal	modal
+wnavigator	navigator
+wexport	模块化
+wfor	for
+wform	form
+wradio	radio
+wradiogroup	radio-group
+wslider	slider
+wicon	icon
+winput	input
+wtextarea	textarea
+winfutautofocus	input
+wtoast	toast
+wvideo	video
+winputfocus	input
+wlabel	label
+wloading	loading
+wpage	Page()
+wprogress	progress
+wscrollview	scroll-view
+wswitch	switch
+wtemplate	template
+wswiper	swiper
+wviewelif	view
+wviewelse	view
+wviewif	view
+小程序API snippet
+
+命令	对应组件或命令
+apirequest	网络请求
+apiuploadfile	上传文件
+apidownloadfile	下载文件
+apiconnskt	创建 WebSocket 链接
+apionsktopen	监听WebSocket连接打开
+apionskterr	监听WebSocket错误
+apisendsktmsg	使用 WebSocket发送数据
+apionsktmsg	接受消息推送
+apicloseskt	关闭WebSocket连接
+apionsktclose	监听WebSocket关闭
+apichooseimg	选额图片
+apipreviewimg	预览图片
+apigetimginfo	获取图片信息
+apistartrecord	开始录音
+apistoprecord	结束录音
+apiplayvoice	播放语音
+apipausevoice	暂停播放语音
+apistopvoice	结束播放语音
+apigetbgaudioplayerstate	获取音乐播放状态
+apiplaybgaudio	播放音乐
+apipausebgaudio	播放暂停音乐
+apiseekbgaudio	控制音乐播放进度
+apistopbgaudio	停止播放音乐
+apionbgaudioplay	监听音乐播放
+apionbgaudiopause	监听音乐暂停
+apionbgaudiostop	监听音乐停止
+apisavefile	保存文件
+apigetsavedfilelist	查看保存文件列表
+apigetsavedfileinfo	查看保存文件信息
+apirmfile	删除缓存文件
+apiopendoc	新开页面打开文档
+apichoosevideo	视频
+apisetstorage	覆盖本地内容
+apisetstoragesync	同步覆盖本地内容
+apigetstorage	获取指定 key 对应的内容
+apigetstoragesync	同步获取指定 key 对应的内容
+apiclearstorage	清理本地数据
+apiclearstoragesync	同步清理本地数据
+apirmstorage	删除本地数据
+apirmstoragesync	同步删除本地数据
+apigetstorageinfo	获取本地数据信息
+apigetstorageinfosync	同步获取本地数据信息
+apigetlocation	获取位置
+apiopenlocation	查看位置
+apichooselocation	打开地图选择位置
+apigetnetworktype	网络状态
+apigetsysinfo	系统消息
+apiaccelerometerchange	重力感应
+apicompasschange	罗盘
+apisetnavbartitle	动态设置导航条文字
+apishownavbarloading	显示导航条加载动画
+apihidenavbarloading	隐藏导航条加载动画
+apihidekeyboard	收起键盘
+apinavigateto	保留当前页面并跳转
+apiredirectto	关闭当前页面并跳转
+apinavigateback	返回上一个页面
+apilogin	登录
+apichecksession	检测session
+apigetuserinfo	用户信息
+apipayment	微信支付
+apishowtoast	交互反馈
+apihidetoast	交互反馈
+apishowmodal	交互反馈
+apihidemodal	交互反馈
+apishowactionsheet	交互反馈
+getSystemInfoSync	同步获取系统信息
+apiphonecall	拨打电话
+
+
+http://172.25.77.52/phoenixLink/youyan_app_php/wikis/youyan-app-advertising
+
+
+http://localhost:8088/index?saleMoney=55445&name=4545&phone=4554&picSrc=&serverId=
+
+
+
+微信小程序常见问题解答【一篇足够了】
+2017-01-10 雨岩 HTML5Notes
+引导关注Q:为什么脚本内不能使用window等对象
+A:页面的脚本逻辑是在JsCore中运行，JsCore是一个没有窗口对象的环境，所以不能在脚本中使用window，也无法在脚本中操作组件
+
+Q:为什么 zepto/jquery 无法使用
+A:zepto/jquery 会使用到window对象和document对象，所以无法使用。
+
+Q:wx.navigateTo无法打开页面
+A:一个应用同时只能打开5个页面，当已经打开了5个页面之后，wx.navigateTo不能正常打开新页面。请避免多层级的交互方式，或者使用wx.redirectTo
+
+Q:样式表不支持级联选择器
+A:WXSS支持以.开始的类选择器。
+
+Q：本地资源无法通过 css 获取
+A：background-image：可以使用网络图片，或者 base64，或者使用<image/>标签
+
+Q：如何修改窗口的背景色
+A：使用 page 标签选择器，可以修改顶层节点的样式
+page {  
+        display: block;  
+        min-height: 100%;  
+        background-color: red;
+}
+Q：为什么上传不成功
+A：为了提升体验流畅度，编译后的代码包大小需小于 1MB ，大于 1MB 的代码包将上传失败。
+
+Q：HTTPS 请求不成功
+A：tls 仅支持 1.2 及以上版本
+
+Q：网络请求的 referer
+A：网络请求的 referer 是不可以设置的，格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版。
+
+Q：不能直接操作 Page.data
+A：避免在直接对 Page.data 进行赋值修改，请使用 Page.setData 进行操作才能将数据同步到页面中进行渲染怎么获取用户输入
+能够获取用户输入的组件，需要使用组件的属性bindchange将用户的输入内容同步到 AppService。
+<input id="myInput" bindchange="bindChange" /><checkbox id="myCheckbox" bindchange="bindChange" />
+var inputContent = {}
+
+Page({
+  data: {
+    inputContent: {}
+  },
+  bindChange: function(e) {
+    inputContent[e.currentTarget.id] = e.detail.value
+  }
+})
+
+Q：微信小程序支持fetch或者promise吗?
+A：promise工具目前不支持，fetch 客户端不支持 工具下个版本保持统一。
+
+Q：touchmove滑动事件里面的currentTarget. id值不变动。
+A：ouchmove / touchend 事件的 target / currentTarget 会永远是 touchstart 时的 target / currentTarget 。
+
+Q：wx.request的POST方法的参数传输服务器接收不到的bug。
+A：wx.request post 的 content-type 默认为 ‘application/json’
+如果服务器没有用到 json 解释的话，可以把 content-type 设置回 urlencoded。
+
+wx.request({
+....
+method: "POST",
+header: {
+"content-type": "application/x-www-form-urlencoded"
+},
+...
+})
+
+Q：wx.uploadFile在手机上返回http码403。
+A：安卓的微信升级到6.5.2及其以上版本。
+
+Q：小程序SVG支持吗?
+A：image的src放远程svg可以，background-image里也可以。
+
+Q：wx.request返回statusCode两端类型不一致。
+A：确实有这个问题 我们来修复下 谢谢。
+
+Q：关于组件的动态生成与销毁？
+A：不支持动态生成组件，但可以用 wx:for 去渲染多个。笔者认为： wx:if 或 hidden 完成类似功能
+
+Q：小程序支持热更吗？
+A：不支持开发者自行更替。
+
+Q：一些接口的回调IOS和Android不一致
+例如支付接口，用户取消支付后，ios只回调complete方法，android则回调fail方法，官方文档也没有任何回调说明，造成开发很困难；类似的还有图片选择接口，分享接口等等。
+A：支付接口，用户取消支付后，ios只回调complete方法，android则回调fail方法，问题已记录，多谢反馈。
+
+Q：如果icon已经在服务器上了，想用直接访问网址的方法加载图片进来这样可以吗？
+A：不能。
+
+Q：ipad不能使用小程序？
+A：暂时不支持ipad打开小程序。
+
+Q：小程序音频，视频播放器问题 。
+1：能够只隐藏进度条跟时间吗
+2：现在iOS平台上的时间显示是0:00，但是android上会显示错误码，能够通过什么设置修改吗？
+A：1：下个版本会修改这里的交互，不显示进度条和时间。
+2：6.5.3 版本已修复此问题。
+
+Q：在手机端调试Canvas的时候，canvas直接覆盖了调试面板？
+A：已知问题，多谢反馈。
+
+Q：拍照窗口可以加浮层吗？
+A：暂时不支持。
+
+Q：IOS10 微信6.5.2 wx.scanCode()无法唤起扫码。
+A：问题已经记录，谢谢反馈。
+
+Q：开发者工具经常报jsEngineScriptError错误，会导致页面白屏。
+A：移步下载最新 0.12.130400 版本的开发工具试试
+
+Q：开发者工具里面，SPA页面，更改title无效。
+A：wx.setNavigationBarTitle
+可以通过 API 改变导航栏标题。
+
+Q：请问小程序页内支持长按保存图片或分享图片吗？
+A：目前没有这个功能。
+
+Q：关于swiper中的current问题。
+如果在新的版本中，直接设current,会产生的效果是：无论从哪个swiper元素点击进去，都会显示swiper第一个子元素的值。
+A：目前swiper在处理swiper-item动态变化的情况时有一些bug，会很快修复的。
+
+Q：小程序能引用自己服务器上的wxss和js文件吗？
+A：不能，无法执行远程代码。（笔者：God NO！）
+
+Q：苹果7，提示内部错误，内存占用过多。
+A：页面做的预加载，列表中有图片，图片渲染的太多了，解决办法就是不当屏展示的图片，不让它渲染。
+
+Q：小程序体验者安卓卡在加载页面进不去，IOS可以进去。
+A：这是android微信客户端旧版本的bug， 请下载最新版本的 6.5.3 客户端
+
+Q：请问目前微信小程序支持蓝牙吗？
+A：目前不支持。（笔者：God NO！Again）
+
+Q：分享功能真机没有效果？
+A：这是android微信客户端旧版本的bug， 请下载最新版本的 6.5.3 客户端
+
+Q：强制使用https，开发和测试环境下怎么联调和测试？
+A：「微信web开发者工具」->「项目」->「开发环境不校验请求域名及TLS版本」。
+
+Q：wx.showToast()方法无效。
+调用wx.request请求网络然后在
+complete: function (res) {
+
+// complete
+wx.hideToast();
+}
+
+在成功方法里面如果要进行showToast的时候感觉无效，并没有弹出提示框。
+A：success 回调调用是在 complete 之前的，如果在 success showToast，下一步 complete hideToast 就会被冲掉 showToast。
+
+Q：picker 组件中的文字大小是否支持修改？
+A：不支持修改。
+
+Q：tabBar的图片在android和ios上面大小差异太大。
+A：这是android微信客户端旧版本的bug， 请下载最新版本的 6.5.3 客户端
+
+Q：tabbar 页面返回问题。
+非首页的tabbar 页面 点击左上角返回箭头时如何返回到小程序首页？ 现在是直接退出小程序了
+A：创建新页面时用 navigateTo 才会新建新页面，同时保留旧页面，如果用 redirectTo 是在当前页面内跳转。
+
+Q：问下 wx.request() 怎么设置成 同步。
+A：reqeust是发起网络请求。没有同步接口。
+
+Q：最新mac版工具不可用，进来就出现获取appservice 失败。
+A：工具设置中选择直接链接网络 。或者 系统中的代理软件设置工具直接链接网络。
+
+Q：真机 view overflow-y下滑会很卡。
+A：父层需要 position:relative; 加了之后就不卡了。
+
+---EOF---
+微信小程序课程目录：
+1.微信小程序简介与入门 
+2.微信小程序框架解密
+3.页面布局
+4.小程序页面书写
+5.组件详解1
+6.组件详解2
+7.项目实战1
+8.项目实战2
+
+获取课程代码和视频，请在后台输入wx_day01,...wx_day06
+
+https://git.oschina.net/null_240_4315/react.git
+
+
+echo "# jq_compant" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:paul-ll/jq_compant.git
+git push -u origin master
+$ ssh-keygen -t rsa
+
+git remote rm origin
+
+$ git config --global user.name "your name" 
+ $ git config --global user.name "your name"$ git config --global user.email "your_email@youremail.com"
+
+
+ 
+微信小程序post
+按照文档,肯定是这么写.那就入坑了.
+1. 'Content-Type': 'application/json'用在get请求中没问题.
+POST请求就不好使了.需要改成: "Content-Type": "application/x-www-form-urlencoded"
+
+2016.11.10更新:有同学在将content-type 修改为小写后,post请求成功.
+
+2. 加上method: "POST"
+3.data: { cityname: "上海", key: "1430ec127e097e1113259c5e1be1ba70" }写成json格式这样也是请求不到数据的.需要转格式.
+下面直接贴代码:
+ 3.1
+[javascript] view plain copy 在CODE上查看代码片派生到我的代码片
+<span style="font-size:24px;">//index.js  
+//获取应用实例  
+var app = getApp()  
+Page( {  
+  data: {  
+    toastHidden: true,  
+    city_name: '',  
+  },  
+  onLoad: function() {  
+    that = this;  
+    wx.request( {  
+      url: "http://op.juhe.cn/onebox/weather/query",  
+      header: {  
+        "Content-Type": "application/x-www-form-urlencoded"  
+      },  
+      method: "POST",  
+     //data: { cityname: "上海", key: "1430ec127e097e1113259c5e1be1ba70" },  
+      data: Util.json2Form( { cityname: "上海", key: "1430ec127e097e1113259c5e1be1ba70" }),  
+      complete: function( res ) {  
+        that.setData( {  
+          toastHidden: false,  
+          toastText: res.data.reason,  
+          city_name: res.data.result.data.realtime.city_name,  
+          date: res.data.result.data.realtime.date,  
+          info: res.data.result.data.realtime.weather.info,  
+        });  
+        if( res == null || res.data == null ) {  
+          console.error( '网络请求失败' );  
+          return;  
+        }  
+      }  
+    })  
+  },  
+  onToastChanged: function() {  
+    that.setData( { toastHidden: true });  
+  }  
+})  
+var that;  
+var Util = require( '../../utils/util.js' );</span>  
+3.2
+[html] view plain copy 在CODE上查看代码片派生到我的代码片
+<span style="font-size:24px;"><!--index.wxml-->  
+<view class="container">  
+   <toast hidden="{{toastHidden}}" bindchange="onToastChanged">  
+        {{toastText}}  
+    </toast>  
+    <view>{{city_name}}</view>  
+    <view>{{date}}</view>  
+    <view>{{info}}</view>  
+</view></span>  
+3.3
+[javascript] view plain copy 在CODE上查看代码片派生到我的代码片
+<span style="font-size:24px;">//util.js  
+function json2Form(json) {  
+    var str = [];  
+    for(var p in json){  
+        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));  
+    }  
+    return str.join("&");  
+}  
+module.exports = {  
+  json2Form:json2Form,  
+}</span>  
+
+
+<! --
+	HTML 5.1 -- 14项新增功能及如何使用
+
+2017-02-22 JavaScript
+英文：RankRed  译文：oschina
+译文链接：www.oschina.net/translate/whats-new-in-html-5-1-added-features
+HTML5 属于万维网联盟 (W3C), 这个组织为整个网络界提供了标准，如此形成的协议可在全世界通行。在 2016 年 11 月， W3C 对长期行使的 HTML 5 标准进行了更新，它是2年内的第一次小更新。许多最开始提出的 HTML 5.1 功能特性都因为设计上的缺陷和缺乏浏览器厂商的支持而去掉了。
+
+尽管有一些元素和功能提升被带进了 HTML 5.1 里面, 但它仍然是一个小的更新。其中的一些新的元素包含了组合标签, 现在这样的元素包括有 <dialog>, <details>, <summary> 以及 <picture>, 这样就为开发者提供了更多表达创意和内容的空间。
+
+W3C 以及开始着手发展 HTML 5.2 草案，有望于 2017 年底发布。而我们在这里所要呈现的是在版本 5.1 中被引入的新的功能特性和功能提升。你不需要动 JavaScript 就可以利用上这些功能特性。并非所有的浏览器都支持这些功能特性，因此你最好是在将它们应用于生产环境之前先检查一下浏览器的支持情况。
+
+14. 防止网络钓鱼攻击
+
+大多数使用 target =’_ blank’ 的人都不知道一个有趣的事实——新打开的标签可以更改 window.opener.location 到一些网络钓鱼页面。它会在开放页面上代表你执行一些恶意 JavaScript 代码。因为用户相信打开的页面已安全，所以他们不会有所怀疑。
+
+为了完全消除这个问题，HTML 5.1 已经通过隔离浏览器上下文的方式标准化了的 rel=”noopener”属性的用法。 rel =“noopener”可以在<a> 和<area>标签中使用。
+
+<a href="#" target="_blank" rel="noopener">
+  The link won't make trouble anymore
+</a>
+13. 灵活处理图片标题
+
+<figcaption> 标签表示与 <figure> 元素关联的标题或图例，通常作为例如图片、图表、插图等视觉元素的容器。在早期的 HTML 版本中， <figcaption> 只能用作第一个或最后一个 <figure> 的子标签。HTML5.1 已放宽此限制，现在您可以在<figure> 容器中的任何位置使用 <figcaption>。
+
+<article>
+  <h1>The Headline of todays news </h1>
+  <figure>
+    <img src="petrolimage.jpeg" alt="Petrol price drops">
+    <figcaption>A man fueling up his car at petrol station</figcaption>
+  </figure>
+  <p>This is the forth hike in petrol prices in two month and the third in case of diesel in one fortnight.</p>
+</article>
+12. 拼写检查
+
+spellcheck 是一个取值可以为空字符串、true 和 false 的枚举属性。如果指定其状态为 true，就表示元素将会接受对其的拼写和语法检查。 
+element.forceSpellCheck() 将强制用户代理在文本元素上报告检查出来的拼写和语法错误，即使用户从来没将输入聚焦在该元素上。
+
+<p spellcheck="true">
+ <label>Name: <input spellcheck=" false" id="textbox"></label>
+</p>
+11. 空选项
+
+新版的 HTML 允许你创建一个空的 <option> 元素。它可以是 <optgroup>, <datalist> 或者 <select> 元素的子元素。你将会发现这项功能在设计对用户友好的表单方面时能有所帮助。
+
+10. 支持 Frame 的全屏
+
+为 Frame 开发的布尔变量 allowfullscreen 属性允许您通过使用 requestFullscreen() 方法控制内容是否可以全屏显示。 例如，我们使用嵌入 YouTube 的播放器的 iframe 做示例。 需要设置 allowfullscreen 属性才能让播放器全屏显示视频。
+
+<article>
+  <header>
+  <p><img src="/usericons/16235"> <b>Fred Flintstone</b></p>
+  <p><a href="/posts/30934" rel=bookmark>12:44</a> — <a href="#acl-503439551">Private Post</a></p>
+  </header>
+  <main>
+  <p>Check out my new video!</p>
+  <iframe title="Video" src="https://youtube.com/?id=92469812" allowfullscreen></iframe>
+  </main>
+</article>
+9. 嵌入 header 和 footer
+
+HTML5.1 允许你在另一个 header 嵌入 header 和 footer。你可以向头部元素添加一个 header 或 footer ，假如它们在段落内容里包含它们自己。假如你想添加详细阐述诸如 <section> 和<article> 标签到语义段落元素，这个特性将变得非常有用。
+
+在下面的代码中，<article> 标签包含一个 <header> 标签，它有个自身包含 <header>标签的<aside> 标签。
+
+<article>
+  <header>
+    <h2>Lesson: How to cook chicken</h2>
+    <aside>
+      <header>
+        <h2>About the author: Tom Hank</h2>
+        <p><a href="./tomhank/">Contact him!</a></p>
+      </header>
+      <p>Expert in nothing but Cooking. The cookbook sideshow.</p>
+    </aside>
+  </header>
+  <p><ins>Pour the marinade into the zip-top bag with the chicken and seal it.
+          Remove as much air as possible from the bag and seal it. </ins></p>
+</article>
+8. 图片零宽度
+
+HTML 新版本允许你添加零宽度的图片。当图片不需要向用户展示时，可以使用此特性。假如一个 img 元素还有其他用途而不仅仅是展示一个图片，例如，作为一个服务的一部分用来计算页面视图个数，在 width 和 height 属性中使用 0 数值。对于 0 宽度的图片，推荐使用空属性。
+
+<img src="theimagefile.jpg" width="0" height="0" alt="">
+7. 校验表单
+
+
+新的 reportValidity() 方法允许你校验一个表单和重置结果，并且在浏览器适合位置向用户报告错误。用户代理可以报告一个以上的限制规则，假如单一元素同时遇到多个问题。对于这种情况，“密码”输入为必填内容但没有填，将会标识为错误。
+
+<h2>Form validation</h2>
+<p>Enter details</p>
+<form>
+  <label>
+    Mandatory input <input type="password" name="password" required />
+  </label>
+  <button type="submit">Submit</button>
+</form>
+<script>
+  document.querySelector('form').reportValidity()
+</script>
+6. 浏览器的上下文菜单
+
+
+在 HTML 5.1 中, 你可以使用 <menu> 标记来定义菜单，里面包含了一个或者多个 <menuitem>元素, 然后利用 contextmenu 属性将其绑定到任何元素上。 <menu> 元素的 id 取值应该与我们想要为其添加上下文菜单的元素的 contextmenu 属性取值保持一致。
+
+每一个 <menuitem> 都可以有如下三个表单项中的一个:
+
+radio – 从一个分组中获取选项；
+checkbox – 选择或者取消选择一个选项；
+command – 在点击时执行一个动作。
+<h2 contextmenu="popup-menu">
+  Right click to get the context menu demo.
+</h2>
+ 
+<menu type="context" id="popup-menu">
+  <menuitem type="checkbox" checked="true">Checkbox 1 </menuitem>
+  <menuitem type="command" label="Command" onclick="alert('WARNING')">Checkbox 2</menuitem> 
+  <menuitem type="radio" name="group1">Radio button a</menuitem>
+  <menuitem type="radio" name="group1" checked="true">Radio button b</menuitem>
+  <menuitem type="checkbox" disabled>Disabled menu item</menuitem>
+</menu>
+5. 在脚本和样式上使用加密随机数
+
+加密随机数（cryptographic nonce ）是一个随机生成的数字，只能被使用一次, 而且针对每一次页面请求，它都得被生成出来。这个 nonce 属性可以被使用在 <script> 和 <style>元素中。
+
+它一般被用在一个网站的内容安全策略之中，以决定一个特定的样式和脚本是否应该在页面上被实现。在下面所提供的代码中，这个 value 是硬编码的，不过在实际的使用场景中，这个值是随机生成的。
+
+<script nonce='d3ne7uWP43Bhr0e'>
+  The JavaScript Code 
+</script>
+4、反序链接关系
+
+rev 属性在 HTML4 里有定义，但是它并没出现在 HTML5 里。W3C 决定在 <a> 和 <link> 元素里重新包含 rev 属性。rev 属性标识当前和反向的链接文档的关系。它已经被包含来支持广泛使用数据结构标记格式，RDFa。
+
+让我们用两个文档来举个例子，每个包含一课程，在它们之间的链接可以使用如下 rel 和 rev 的属性来定义。
+
+//Document with URL "chapter1.html"
+ 
+<link href="Lesson2.html" rel="next" rev="prev">
+ 
+ 
+//Document with URL "chapter2.html"
+ 
+<link href="Lesson1.html" rel="prev" rev="next">
+<link href="Lesson3.html" rel="next" rev="prev">
+3. 显示/隐藏信息
+
+新的 <details> 和 <summary>元素允许您向一段内容添加扩展信息。您可以通过单击元素来显示或隐藏一个附加信息块。 默认情况下是隐藏附加信息的。
+
+在代码中，您应该将 <summary>标记放在 <details>标记内，如下所示。 <summary>标签之后，你可以添加要隐藏的其他内容。
+
+<section>
+  <h3>Error Message</h3>
+  <details>
+  <summary>This file hasn't been download due to network error.</summary>
+  <dl>
+    <dt>File name:</dt><dd>Passcode.txt</dd>
+    <dt>File size:</dt><dd>8 KB</dd>
+    <dt>Error code:</dt><dd>342a</dd>
+  </dl>
+  </details>
+</section>
+2. 更多的输入项类型
+
+
+HTML 输入项元素扩充了三个输入类型 – week, month 以及 datetime-local。 
+正如其名称所表明的，头两个元素可以让用户选择一个星期值和一个月份值。根据浏览器的支持情况不同，它们俩都会被渲染成一个下拉显示的日历，让你可以选择一年中一个特定的星期或者月份。
+
+datatime-local 表示的是一个日期和时间的输入域, 不过没有时区设置。其数据可以采用跟 month 或者 week 输入项类似的方法来选定, 而时间可以单独输入。
+
+<section>
+  <h2> 
+    Week, Month and Datetime-local 
+  </h2>
+  <form action="action_page.php">
+    Choose a week:
+    <input type="week" name="year_week">
+    <input type="submit">
+  </form>
+  <form action="action_page.php">
+    Birthday (month and year):
+    <input type="month" name="bdaymonth">
+    <input type="submit">
+  </form>
+  <form action="action_page.php">
+    Joining (date and time):
+    <input type="datetime-local" name="bdaytime">
+    <input type="submit" value="Send">
+  </form>
+</section>
+1. 响应式图像
+
+W3C 引入了一些功能特性，无需使用 CSS 就可以实现响应式图像。它们是 …
+
+srcset 图像属性
+
+srcset 属性让你可以指定一个多个可选的图像来源，对应于不同的像素分辨率。它将允许浏览器根据用户设备的不同选择合适质量的实现来进行显示。例如，对于使用网络比较慢的移动设备的用户，显示一张低分辨率的图片会比较好。
+
+你可以使用 srcset 属性并且带上它自有的 x 修饰符来描述每一个图片的像素比例, 如果用户的像素比例等于 3，就会显示 high-res 这张图片。
+
+<img src="clicks/low-res.jpg" srcset="
+  clicks/low-res.jpg 1x, 
+  clicks/medium-res.jpg 2x, 
+  clicks/high-res.jpg 3x"
+>
+除了像素比例之外，你也可以选择使用 w 修饰符来指定不同尺寸大小的图片。在如下示例中，high-res 图片被定义成在宽度为 1600px 时显示。
+
+<img src="clicks/low-res.jpg" srcset="
+  clicks/low-res.jpg 500w, 
+  clicks/medium-res.jpg 1000w, 
+  clicks/high-res.jpg 1600w"
+>
+sizes 图像属性
+
+大多数时候创作者们都喜欢针对不同的屏幕尺寸显示不同的图片。这个可以用 sizes 属性做到。它让你可以针对分配给图像显示的空间大小来对宽度做出调整, 然后使用 srcset 属性来挑选合适的图片来显示。例如…
+
+<img src="clicks/low-res.jpg" sizes="(max-width: 25em) 60vw, 100vw" 
+  srcset="clicks/low-res.jpg 500w, 
+  clicks/medium-res.jpg 1000w, 
+  clicks/high-res.jpg 1600w"
+>
+在这里， sizes 属性定义了在视窗大于 25 em 时图像宽度为视窗宽度的 100%，或者在小于等于 25em 时为视图宽度的 60%。
+
+picture 元素
+
+picture 元素让你可以针对不同的屏幕尺寸声明图片。这个可以通过用 <picture> 元素封装 <img> ，并且描述多个 <source>子元素来实现。
+
+<picture> 标记单独使用并不会显示任何东西。你已经被假定会声明默认的图像来源作为 src 属性的取值，而可选的图像来源则会放在 scrset 属性之中，如下所示：
+
+<picture>
+  <source media="(max-width: 25em)" srcset="
+    clicks/small/low-res.jpg 1x,
+    clicks/small/medium-res.jpg 2x, 
+    clicks/small/high-res.jpg 3x
+  ">
+  <source media="(max-width: 60em)" srcset="
+    clicks/large/low-res.jpg 1x,
+    clicks/large/medium-res.jpg 2x, 
+    clicks/large/high-res.jpg 3x
+  ">
+ 
+  <img src="clicks/default/medium-res.jpg">
+</picture>
+--->
+
+
+
+
+字體樣式
+    font-family: 'Raleway', sans-serif;外國網站
+	
+	songck
+songck@123
+
+
+
+[转载]如何解决failed to push some refs to git
+git pull --rebase origin master
+git push -u origin master
+
+
+使用Git 添加远程github仓库的时候提示错误：fatal: remote origin already exists. 
+$ git remote rm origin
+
+
+ssh -T git@github.com
+　git clone https://github.com/findingsea/myRepoForBlog.git
+
+git init
+　　touch README.md
+　　git add README.md
+　　git commit -m 'first_commit'
+　　git remote add origin https://github.com/findingsea/myRepoForBlog.git
+　　git push origin master
+
+git add .
+　　git commit -m 'first_commit'
+　　git remote add origin https://github.com/findingsea/myRepoForBlog.git
+　　git push origin master
+　　如果执行git remote add origin https://github.com/findingsea/myRepoForBlog.git，出现错误：
+
+　　fatal: remote origin already exists
+　　则执行以下语句：
+
+　　git remote rm origin
+　　再往后执行git remote add origin https://github.com/findingsea/myRepoForBlog.git 即可。
+
+　　在执行git push origin master时，报错：
+
+　　error:failed to push som refs to.......
+ 
+
+　　则执行以下语句：
+
+　　git pull origin master
+
+
+
+提交代码遇到『Everything up-to-date』
+
+上网查了下，发现中文大多答非所问，少数能解决的并没有阐述原理，所以我写这篇文章记录下。
+
+这里先上 stackoverflow 的回答，基础好的可以看这个。
+
+接下来说我自己的理解，出现这个问题的原因是git提交改动到缓存，要push的时候不会将本地所有的分支都push掉，所以出现这个问题。我们应该告诉git提交哪个分支。
+
+这里有种特殊的情况是如果你是fork别人的仓库再clone到本地的话，即使git上只有一个主分支，他还是可能出现这个错误。那么我们就需要新建分支提交改动然后合并分支。
+
+接下来先创建一个新分支提交改动
+
+$ git branch newbranch
+然后输入这条命令检查是否创建成功
+
+$ git branch
+这时终端输出
+
+  newbranch
+* master
+这样就创建成功了，前面的*代表的是当前你所在的工作分支。我们接下来就要切换工作分支。
+
+$ git checkout newbranch
+这样就切换完了，可以 $ git branch 确认下。然后你要将你的改动提交到新的分支上。
+
+$ git add .
+$ git commit -a
+此时可以 $ git status 检查下提交情况。如果提交成功，我们接下来就要回主分支了，代码和之前一样。
+
+$ git checkout master
+然后我们要将新分支提交的改动合并到主分支上
+
+$ git merge newbranch
+合并分支可能产生冲突这是正常的，虽然我们这是新建的分支不会产生冲突，但还是在这里记录下。下面的代码可以查看产生冲突的文件，然后做对应的修改再提交一次就可以了。
+
+$ git diff
+我们的问题就解决了，接下来就可以push代码了。
+
+$ git push -u origin master
+新建分支的朋友别忘了删除这个分支
+
+$ git branch -D newbranch
+如果想保留分支只是想删除已经合并的部分只要把大写的D改成小写的d就行了

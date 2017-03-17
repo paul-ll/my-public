@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>带水平滚动拖动条的jQuery图片左右滚动代码 - 素材家园</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/sucaijiayuan.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- 代码 开始 -->
+<div id="zsgun">
+	<a href="http://www.sucaijiayuan.com" class="prenext zspre"></a>
+	<a href="http://www.sucaijiayuan.com" class="prenext zsnext"></a>
+	<div id="gundiv" class="container2">
+		<ul>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img01.jpg" alt="大头网网页特效" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">潮流单品</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img02.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">网页特效</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img03.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">时尚摄影</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img04.jpg" alt="大头网网页特效" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">英伦风</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img05.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">素装运动派</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img01.jpg" alt="大头网网页特效" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">潮流单品</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img02.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">网页特效</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img03.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">时尚摄影</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img04.jpg" alt="大头网网页特效" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">英伦风</a></p></li>
+			<li><a href="http://www.sucaijiayuan.com" target="_blank"><img src="images/img05.jpg" alt="" width="153" height="153"/></a><p><a href="http://www.sucaijiayuan.com" target="_blank">素装运动派</a></p></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="js/hScrollPane.js"></script>
+<script type="text/javascript">
+$(function() {
+var glen = $("#gundiv ul li").length;
+$("#gundiv ul").css("width",172 * (glen));
+$("#gundiv li").hover(function(){$("#gundiv li").removeClass("zslion");$(this).addClass("zslion");},function(){$(this).removeClass("zslion");})
+});
+$("#zsgun").hScrollPane({
+	mover:"ul",
+	moverW:function(){return $("#zsgun li").length*172-17;}(),
+	showArrow:true,
+	handleCssAlter:"draghandlealter"
+});
+</script>
+<!-- 代码 结束 -->
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>来源：<a href="http://www.sucaijiayuan.com/" target="_blank">素材家园</a></p>
+<p>转载请注明出处，此代码仅供学习交流，请勿用于商业用途。</p>
+</div>
+
+</body>
+</html>

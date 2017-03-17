@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Simple Switch,Switch,Simple,开关插件,开关,javascript,Switch jquery">
+    <meta name="description" content="Simple Switch is Switch jQuery plug-in , Author is Lukang">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Simple Switch - lukang</title>
+
+    <script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/simple.switch.js"></script>
+    <link rel="stylesheet" href="css/simple.switch.three.css" type="text/css">
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+
+
+    <link rel="stylesheet" href="FontAwesome/css/font-awesome.min.css" type="text/css">
+
+
+
+
+</head>
+<body>
+
+
+
+
+<div class="lk m0">
+    <iframe src="bj/a6.html" id="iframe" class="iframe"></iframe>
+    <div class="main">
+        Simple Switch
+    </div>
+</div>
+
+<div class="lk title">
+    <div class="main">
+        
+        <div class="p p2">
+            <pre class="hl pre">//本次编写使用jQuery版本为 <span class="hl num">1.8.3</span>
+<span class="hl kwa">&lt;script</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;text/javascript&quot;</span> <span class="hl kwb">src</span>=<span class="hl str">&quot;js/183.js&quot;</span><span class="hl kwa">&gt;&lt;/script&gt;</span>
+//引用核心文件
+<span class="hl kwa">&lt;script</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;text/javascript&quot;</span> <span class="hl kwb">src</span>=<span class="hl str">&quot;js/simple.switch.min.js&quot;</span><span class="hl kwa">&gt;&lt;/script&gt;</span>
+<span class="hl kwa">&lt;link</span> <span class="hl kwb">rel</span>=<span class="hl str">&quot;stylesheet&quot;</span> <span class="hl kwb">href</span>=<span class="hl str">&quot;css/simple.switch.three.css&quot;</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;text/css&quot;</span><span class="hl kwa">&gt;</span>
+//压缩后的JS文件不到3K
+</pre>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="lk m1">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">Flat：</h1>
+
+            <div class="div"><input type="checkbox" class="c3" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c3" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c3" name="o"></div>
+            <div class="div"><input type="checkbox" class="c3" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">();</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m1">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">FlatRadius：</h1>
+
+            <div class="div"><input type="checkbox" class="c4" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c4" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c4" name="o"></div>
+            <div class="div"><input type="checkbox" class="c4" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;FlatRadius&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m1">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">FlatCircular：</h1>
+
+            <div class="div"><input type="checkbox" class="c5" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c5" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c5" name="o"></div>
+            <div class="div"><input type="checkbox" class="c5" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;FlatCircular&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m2">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">Default：</h1>
+
+            <div class="div"><input type="checkbox" class="c1" name="l" disabled></div>
+            <div class="div"><input type="checkbox" class="c1" name="l" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c1" name="l"></div>
+            <div class="div"><input type="checkbox" class="c1" name="l" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;Default&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m2">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">DefaultMin：</h1>
+
+            <div class="div"><input type="checkbox" class="c2" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c2" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c2" name="o"></div>
+            <div class="div"><input type="checkbox" class="c2" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;DefaultMin&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m3">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">Green：</h1>
+
+            <div class="div"><input type="checkbox" class="c6" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c6" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c6" name="o"></div>
+            <div class="div"><input type="checkbox" class="c6" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;Green&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+PS: 使用此主题的时候，必须提前引用 <a href="https://github.com/FortAwesome/Font-Awesome/" target="_blank">Font-Awesome <i class="fa fa-github"></i></a>
+</pre>
+        </div>
+    </div>
+</div>
+<div class="lk m4">
+    <div class="main">
+        <div class="l">
+            <h1 class="h1">Icon：</h1>
+
+            <div class="div"><input type="checkbox" class="c7" name="o" disabled></div>
+            <div class="div"><input type="checkbox" class="c7" name="o" disabled checked></div>
+            <div class="div"><input type="checkbox" class="c7" name="o"></div>
+            <div class="div"><input type="checkbox" class="c7" name="o" checked></div>
+        </div>
+        <div class="r">
+            <h1 class="h1">Code：</h1>
+            <pre class="hl pre">
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> disabled checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span><span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;checkbox&quot;</span> checked<span class="hl kwa">&gt;</span>
+<span class="hl kwa">&lt;script&gt;</span>
+	<span class="hl opt">$(</span><span class="hl str">&quot;.checkbox&quot;</span><span class="hl opt">).</span><span class="hl kwd">simpleSwitch</span><span class="hl opt">({</span>
+		<span class="hl str">&quot;theme&quot;</span><span class="hl opt">:</span> <span class="hl str">&quot;Icon&quot;</span>
+	<span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
+PS: 使用此主题的时候，必须提前引用 <a href="https://github.com/FortAwesome/Font-Awesome/" target="_blank">Font-Awesome <i class="fa fa-github"></i></a>
+</pre>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    $(".c1").simpleSwitch({
+        "theme": "Default"
+    });
+    $(".c2").simpleSwitch({
+        "theme": "DefaultMin"
+    });
+    $(".c3").simpleSwitch();
+    $(".c4").simpleSwitch({
+        "theme": "FlatRadius"
+    });
+    $(".c5").simpleSwitch({
+        "theme": "FlatCircular"
+    });
+    $(".c6").simpleSwitch({
+        "theme": "Green"
+    });
+    $(".c7").simpleSwitch({
+        "theme": "Icon"
+    });
+
+</script>
+
+
+
+<div class="lk m5">
+    <div class="main">
+        Author is <a href="http://lukangkang.cc/" style="color:#000;" target="_blank">Lukang</a> . <i class="fa fa-heart" style="color: #d43f57;"></i> . 最后更新于2016年7月19日
+    </div>
+</div>
+
+
+
+</body>
+</html>

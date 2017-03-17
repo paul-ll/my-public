@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" contect="zh-CN">
+<title>非常不错的JS相册特效代码下载 - JS代码网</title> 
+<meta name="keywords" content="JS代码,JS特效,JS特效代码,JS相册特效,JS相册代码,jQuery相册特效,jQuery相册插件,jQuery相册图片轮播" />
+<meta name="description" content="JS代码网提供高质量的JS相册特效代码,jQuery相册特效下载" />
+<link rel="stylesheet" type="text/css" href="css/base.css?v=1409654123" />
+<link rel="stylesheet" type="text/css" href="css/album.css?v=1409654123" media="all" />
+<script type="text/javascript" src="js/jquery.js?v=1409654123"></script>
+<script type="text/javascript" src="js/dxl.js?v=1409654123"></script>
+<script type="text/javascript">
+var dxlCityId = 7;
+var _current_num=0;
+</script>
+<script type="text/javascript" src="js/album.js?v=1409654123"></script>
+<!--[if IE]>
+
+<style type="text/css">﻿
+.valin{ display:block;}
+
+.valin i {
+
+    display:inline-block;
+
+    height:100%;
+
+    vertical-align:middle
+
+    }
+    
+
+.valin img {
+
+    vertical-align:middle
+
+    }
+
+</style>
+
+<![endif]-->
+</head>
+
+<body>
+<div class="album-box" id="album">
+  <div h class="pre-btn" id="preBtn" title="上一张 "><i></i></div>
+  <div class="next-btn" id="nextBtn" title="下一张 "><i></i></div>
+  <div class="album-con">
+    <div class="valin"> <i></i><img src="images/20140121161108.JPG" alt="" id="realImg" />
+      <p class="pic-alt" id="txtDes"></p>
+    </div>
+    <div id="imgLoading"></div>
+  </div>
+  <div h class="thum-box" id="thumBox">
+    <div class="thum-wrap" id="thumWrap">
+      <ul class="imglist fix" id="photoList">
+      </ul>
+    </div>
+    <i class="thum-pre-btn" id="thumPreBtn" title="上一页"></i> <i class="thum-next-btn" id="thumNextBtn" title="下一页"></i> </div>
+</div>
+<textarea class="dn" id="albumDataList">
+ 
+ 	 		<li>
+     <div> <img alt="JS相册特效" src="images/tiny/20140121161108.JPG" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121161108.JPG</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img src="images/tiny/20140121161130.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121161130.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img src="images/tiny/20140121161152.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121161152.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img src="images/tiny/20140121161231.JPG" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121161231.JPG</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img alt="JS相册特效" src="images/tiny/20140126134637.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140126134637.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img alt="JS相册特效" src="images/tiny/20140121181958.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121181958.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img alt="JS相册特效" src="images/tiny/20140121182023.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121182023.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+       		<li>
+     <div> <img alt="JS相册特效" src="images/tiny/20140121182118.jpg" onload="scaleImage(this,99,75)" alt=""></div>
+      <p></p>
+      <i class="dn">images/20140121182118.jpg</i>
+      <i class="dn imgAlt"></i>
+      </li>
+            
+</textarea>
+<div id="schedule-pop2" class="schedule-pop" style="display: none; top: 102px; left: 0px;">
+                    <div id="inpForm2" class="formList formSmall">
+                        <p class="hd clearfix">
+                            <strong>花嫁丽舍私人婚礼会所（世博店）</strong><i>档期查询</i><br>  
+                        </p>
+                        <p class="bd">
+                            即将为你查询：<span><em id="year">2014</em>年<em id="mouth">01</em>月<em id="day">24</em>日</span>的婚宴档期情况<br>
+                            请输入手机号码，便于接受酒店实时档期信息！
+                        </p>
+                        <div class="inputBox">
+                        	<div class="mbInp">
+                            	<label>请输入手机号</label><input type="text" id="mobile614" class="txt" value="" name="mobile" maxlength="11"><span style="padding-left: 0px;" class="msg"><em></em></span>
+                            </div>
+                        </div>
+                        <div class="inputBox clearfix"><input type="submit" id="btn614" class="btn mobile_submit fl mr10" value=""><i class="fl">您的重要信息不会被泄露&nbsp;&nbsp;详见隐私条约</i></div>
+                        <div id="close614_2"></div> 
+                        <input type="hidden" name="act" value="do">
+                    	<input type="hidden" name="from" value="detail">
+                    	<input type="hidden" name="noalert" value="a">
+                    	<input type="hidden" name="schedule_hotel" value="schedule_hotel">
+                    	<input type="hidden" name="happyday" value="" id="happydayv1">
+                    	<input type="hidden" name="usertype" value="return" id="usertype">
+                    	<input type="hidden" name="order_from" value="sh_HotelDetail_Schedule_TopCenter">             
+                    </div>
+                   <input type="hidden" id="trackCitys" value="sh">
+                   <input type="hidden" id="hotel_id" value="5499" />
+                   <input type="hidden" id="hotel_name" value="花嫁丽舍私人婚礼会所（世博店）" />
+</div>
+<script type="text/javascript">
+function scaleImage(o, w, h) {
+    var img = new Image();
+    img.src = o.src;
+    if (img.width > 0 && img.height > 0) {
+        if (img.width / img.height >= w / h) {
+            if (img.width > w) {
+                o.width = w;
+                o.height = (img.height * w) / img.width;
+            } else {
+                o.width = img.width;
+                o.height = img.height;
+            }
+           // o.alt = img.width + "x" + img.height;
+        } else {
+            if (img.height > h) {
+                o.height = h;
+                o.width = (img.width * h) / img.height;
+            } else {
+                o.width = img.width;
+                o.height = img.height;
+            }
+            //o.alt = img.width + "x" + img.height;
+        }
+    }
+   
+}
+</script> 
+<script type="text/javascript" src="js/jquery.album.js?v=1409654123"></script>
+</script>
+</body>
+</html>
