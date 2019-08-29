@@ -116,5 +116,20 @@ URL调用一个PHP脚本，该脚本记录有关操作的详细信息，这些�
 //sdk监听技术
 //async await 异常try{}catch(){}
 
+//javascript中怎么判断某变量是null,undefined,还是不存这个变量 ? 以及变量是array 还是 object 还是 null ?
+/***
+下面是具体区分是  null / object /array 类型方法:
+
+先查看  i == null  返回true则 i 为 null  反之返回false则不是
+
+然后使用  i.constructor.toString().indexOf('Array')  > -1   如果表达式返回了true 则是 Array类型
+
+同理使用  i.constructor.toString().indexOf('Object')  > -1   如果表达式返回了true 则是 object类型
+
+[  说明: i.constructor返回的是i变量的构建函数,譬如i的是数字型变量    则返回  function Number() { [native code] }
+
+toString() 则将上面的结果转换为字符串,indexOf('数值')则是匹配某个变量中有无存在括号内的数值,有则返回数值在变量中位置,如果没找到则什么都没返回,所以只要大于-1就是有匹配到 ]
+***/
+
 
 
