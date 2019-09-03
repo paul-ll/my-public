@@ -223,3 +223,47 @@ var b = Singleton.getInstance('ConardLi2');
 console.log(a===b);   //true
 
 
+
+//实现sleep函数
+/***
+sleep函数作用是让线程休眠，等到指定时间在重新唤起。
+
+**/
+ //方法一
+function sleep1(ms, callback) {
+    setTimeout(callback, ms)
+}
+//sleep 1s
+sleep1(1000, () => {
+    console.log(1000)
+})
+//方法二
+function sleep2(ms) {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, ms)
+    })
+}
+sleep2(1000).then(() => {
+    console.log(2000)
+})
+//方法三
+function sleep3(ms) {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, ms)
+    })
+}
+async function init() {
+    await sleep3(1000);
+}
+init().then(() => {
+    console.log(3000)
+})
+
+
+
+
+
+
+
+
+
