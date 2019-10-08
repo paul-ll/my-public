@@ -113,6 +113,7 @@ URL调用一个PHP脚本，该脚本记录有关操作的详细信息，这些�
 }
 ****/
 //css手风琴
+/*****:hover*****/
 //sdk监听技术
 //async await 异常try{}catch(){}
 
@@ -132,4 +133,301 @@ toString() 则将上面的结果转换为字符串,indexOf('数值')则是匹配
 ***/
 
 
+
+
+/***
+function中的this是个例外，this并不指function对象本身，也不是指function的作用域对象。而是在运行时绑定到特定的对象上。即它采用的是动态作用域规则
+***/
+function foo() {
+    console.log( a ); // 2
+}
+
+function bar() {
+    var a = 3;
+    foo();
+}
+
+var a = 2;
+
+bar(); //2
+
+/////
+var obj = {
+    a: 1,
+    foo: function f() {
+        console.log(this.a);        
+    }
+}
+
+obj.foo(); //1
+
+var g = obj.foo;
+g();    //undefined
+
+g = obj.foo.bind(obj);
+g();    //1
+/*
+上面的代码段中，函数foo在非严格模式下如果没有明确绑定对象，则会绑定到全局对象，所以输出undefined。在严格模式下则会报错。
+
+为什么obj.foo() 可以正确输出呢？原因在于这种调用方式会隐式绑定到执行这个方法的对象上（obj）。
+***/
+var log = console.log;
+console.log.call(console, "stuff")//stuff
+console.log.call(window, "stuff") //TypeError: Illegal invocation
+
+var log = console.log.bind(console);
+
+//代码
+function Foo(){
+  getName = function(){
+    console.log(1)
+  }
+  return this
+}
+Foo.getName = function(){
+  console.log(2)
+}
+Foo.prototype.getName = function(argument){
+  // body... 
+  console.log(3)
+};
+var getName = function(){
+  console.log(4)
+}
+
+function getName(){
+  console.log(5)
+}
+
+Foo.getName() //2
+getName() //4
+console.log(getName)
+Foo().getName()//1
+console.log(getName)
+getName() //1
+new Foo.getName() //2
+new Foo().getName()//3
+new new Foo().getName() //3
+
+
+
+function a(){
+  return Promise.resolve(1).then(res=>{
+    console.log(res)
+  })
+}
+function b(){
+  console.log(2)
+}
+
+async function c(){
+  await a() //1
+  console.log(3)
+  await b() //2
+  console.log(4)
+  console.log(5)
+}
+
+//可以用数组的 Array.prototype.slice 方法把 arguments 对象转变为一个真正的数组
+var argsToArray = function() {
+    console.log(typeof arguments.callee); // 'function'
+    var args = Array.prototype.slice.call(arguments);
+    console.log(typeof arguments.callee); // 'undefined'
+    console.log(typeof arguments.slice); // 'function'
+};
+
+argsToArray();
+
+
+//柯里化
+function add(a, b) {
+    return a + b;
+}
+
+function curryAdd(a) {
+    return function(b) {
+        return add(a, b);
+    }
+}
+
+var add5 = curryAdd(5);
+
+add5(2);
+add5(5);
+add5(200);
+//变量提升
+foo();  // 报错  
+var foo = function () {
+    console.log('foo1');
+}
+
+foo();  // foo1，foo重新赋值
+
+var foo = function () {
+    console.log('foo2');
+}
+
+foo(); // foo2，foo重新赋值
+//函数提升
+foo();  // foo2
+function foo() {
+    console.log('foo1');
+}
+
+foo();  // foo2
+
+function foo() {
+    console.log('foo2');
+}
+
+foo(); // foo2
+//声明优先级，函数 > 变量
+foo();  // foo2
+var foo = function() {
+    console.log('foo1');
+}
+
+foo();  // foo1，foo重新赋值
+
+function foo() {
+    console.log('foo2');
+}
+
+foo(); // foo1
+/**
+上面三个例子中，第一个例子是变量提升，第二个例子是函数提升，第三个例子是函数声明优先级高于变量声明。
+
+需要注意的是同一作用域下存在多个同名函数声明，后面的会替换前面的函数声明
+**/
+
+//手写new对象
+function creat(){
+  var obj = new Object()
+  Con = [].shift.call(arguments)
+  obj.__proto__=Con.prototype;
+  var ret = Con.apply(obj,arguments)
+  return ret instanceof Object ? ret :obj
+}
+
+
+
+var name = 'window'
+
+var person1 = {
+  name: 'person1',
+  show1: function () {
+    console.log(this.name)
+  },
+  show2: () => console.log(this.name),
+  show3: function () {
+    return function () {
+      console.log(this.name)
+    }
+  },
+  show4: function () {
+    return () => console.log(this.name)
+  }
+}
+var person2 = { name: 'person2' }
+
+person1.show1() // person1，隐式绑定，this指向调用者 person1 
+person1.show1.call(person2) // person2，显式绑定，this指向 person2
+
+person1.show2() // window，箭头函数绑定，this指向外层作用域，即全局作用域
+person1.show2.call(person2) // window，箭头函数绑定，this指向外层作用域，即全局作用域
+
+person1.show3()() // window，默认绑定，这是一个高阶函数，调用者是window
+          // 类似于`var func = person1.show3()` 执行`func()`
+person1.show3().call(person2) // person2，显式绑定，this指向 person2
+person1.show3.call(person2)() // window，默认绑定，调用者是window
+
+person1.show4()() // person1，箭头函数绑定，this指向外层作用域，即person1函数作用域
+person1.show4().call(person2) // person1，箭头函数绑定，
+                // this指向外层作用域，即person1函数作用域
+person1.show4.call(person2)() // person2
+
+
+
+var name = 'window'
+
+function Person (name) {
+  this.name = name;
+  this.show1 = function () {
+    console.log(this.name)
+  }
+  this.show2 = () => console.log(this.name)
+  this.show3 = function () {
+    return function () {
+      console.log(this.name)
+    }
+  }
+  this.show4 = function () {
+    return () => console.log(this.name)
+  }
+}
+
+var personA = new Person('personA')
+var personB = new Person('personB')
+
+personA.show1() // personA，隐式绑定，调用者是 personA
+personA.show1.call(personB) // personB，显式绑定，调用者是 personB
+
+personA.show2() // personA，首先personA是new绑定，产生了新的构造函数作用域，
+        // 然后是箭头函数绑定，this指向外层作用域，即personA函数作用域
+personA.show2.call(personB) // personA，同上
+
+personA.show3()() // window，默认绑定，调用者是window
+personA.show3().call(personB) // personB，显式绑定，调用者是personB
+personA.show3.call(personB)() // window，默认绑定，调用者是window
+
+personA.show4()() // personA，箭头函数绑定，this指向外层作用域，即personA函数作用域
+personA.show4().call(personB) // personA，箭头函数绑定，call并没有改变外层作用域，
+                // this指向外层作用域，即personA函数作用域
+personA.show4.call(personB)() // personB，解析同题目1，最后是箭头函数绑定，
+                // this指向外层作用域，即改变后的person2函数作用域
+
+
+
+function add(a) {
+  function sum(b) { // 使用闭包
+      a = a + b; // 累加
+      return sum;
+   }
+   sum.toString = function() { // 重写toString()方法
+        return a;
+    }
+   return sum; // 返回一个函数
+}
+
+add(1); // 1
+add(1)(2);  // 3
+add(1)(2)(3) // 6
+add(1)(2)(3)(4) // 10 
+
+function add(num){
+  const sum = (arguments[1] || 0) + num;
+  console.log(sum);
+  return add.bind(this, sum)
+}
+
+
+/*****如何用 css 或 js 实现多行文本溢出省略效果，考虑兼容性
+单行：
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+多行：
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3; //行数
+overflow: hidden;
+兼容：
+p{position: relative; line-height: 20px; max-height: 40px;overflow: hidden;}
+p::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+background: -webkit-linear-gradient(left, transparent, #fff 55%);
+background: -o-linear-gradient(right, transparent, #fff 55%);
+background: -moz-linear-gradient(right, transparent, #fff 55%);
+background: linear-gradient(to right, transparent, #fff 55%);
+}
+***/
 

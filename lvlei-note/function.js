@@ -3,11 +3,11 @@ Function.prototype.myCall = function(context = window, ...args){
 	if(this === Function.prototype){
 		return undefined // 用于防止 Function.prototype.myCall() 直接调用
 	}
-	context = content || window;
+	context = context || window;
 	const fn = Symbol()
-	content[fn] = this
-	const result = content[fn](...args)
-	delete content[fn] 
+	context[fn] = this
+	const result = context[fn](...args)
+	delete context[fn] 
 	return result
 };
 /**
@@ -49,6 +49,19 @@ Function.prototype.myBind = function(context,...args1){
 		return _this.apply(context, args1.concat(args2))
 	}
 };
+
+var a =5
+function b(){
+	var a= 9
+	return function c(){
+		console.log(a)
+		a=7
+	}
+}
+let  c= b()
+c()
+console.log(a) // 5 闭包不能访问到闭包的变量
+
 /**
 1.处理参数，返回一个闭包
 2.判断是否为构造函数调用，如果是则使用new调用当前函数
@@ -223,7 +236,7 @@ var b = Singleton.getInstance('ConardLi2');
 console.log(a===b);   //true
 
 
-
+scp -P 29997 root@95.163.203.224:/home/www/ /Users/lvlei/Desktop/my-project
 //实现sleep函数
 /***
 sleep函数作用是让线程休眠，等到指定时间在重新唤起。
@@ -260,7 +273,35 @@ init().then(() => {
 })
 
 
+//instanceof原理
+function new_instance_of(leftValue,rightValue){
+	let rightProto = rightValue.prototype
+	leftValue = leftValue.__proto__;
+	while(true){
+		if(leftValue === null){
+			return false
+		}
+		if(leftValue === rightProto){
+			return true
+		}		
+		leftValue = leftValue.__proto__;
+	}
+}
 
+function deepClone(child,parent){
+	child=child?child:{}
+	for(let key in parent){
+		if(parent.hasOwnProperty()){
+			if(typeof child[key] == 'object'){
+				child[key] = object.prototype.toString.call(parent[key])==[object object]?{}:[]
+				deepClone(child[key],parent[key])
+			}else {
+				child[key] = parent[key]
+			}
+		}
+	}
+	return child
+}
 
 
 
