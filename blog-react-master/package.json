@@ -15,7 +15,7 @@
     "express-session": "^1.14.2",
     "html-webpack-plugin": "^2.26.0",
     "iconv-lite": "^0.4.15",
-    "mongoose": "^4.7.5",
+    "mongoose": "^5.7.7",
     "multer": "^1.2.1",
     "path": "^0.12.7",
     "react": "^15.4.1",
